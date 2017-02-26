@@ -38,10 +38,11 @@ function opt = nsga2_selection(opt)
         for i=1:size(FeasiblePopIndex,1)
             F{R(i)} = horzcat(F{R(i)}, FeasiblePopIndex(i));
         end
+        %---------------Store Ranking of Feasible Solutions--------------------
         opt.R(FeasiblePopIndex) = R;
     end 
     
-    %---------------Store Ranking of Feasible Solutions--------------------
+    
     
     
     
